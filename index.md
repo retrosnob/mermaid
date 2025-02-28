@@ -20,14 +20,14 @@ This is the first finite state machine showing a transition from start to state 
 ## FSM 2: Branching States
 
 <div class="mermaid">
-stateDiagram
-    direction LR
-
-    [*] --> S0
-    S0 --> S1 : x
-    S0 --> S2 : y
-    S1 --> [*]
-    S2 --> [*]
+graph TD
+    A[50] 
+    A --> B[30]
+    A --> C[70]
+    B --> D[20]
+    B --> E[40]
+    C --> F[60]
+    C --> G[80]
 </div>
 
 ## With styling
