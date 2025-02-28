@@ -17,7 +17,7 @@ stateDiagram
 
 This is the first finite state machine showing a transition from start to state S0, then to S1 on input 'a', and finally ending.
 
-## FSM 2: Branching States
+## Binary Search Tree
 
 <div class="mermaid">
 graph TD
