@@ -1,5 +1,11 @@
+```mermaid
+    info
+```
+
+
 ## FSM 1: No Branching
 
+<div class="mermaid">
 ```mermaid
 stateDiagram
     direction LR
@@ -9,6 +15,7 @@ stateDiagram
 
     class S1 accepting
 ```
+</div>
 
 This is the first finite state machine showing a transition from start to state S0, then to S1 on input 'a', and finally ending.
 
@@ -50,3 +57,8 @@ stateDiagram
    class Crash badBadEvent
    class end badBadEvent
 ```
+
+<script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true });
+</script>
