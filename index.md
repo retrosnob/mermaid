@@ -28,6 +28,12 @@ graph TD
     B --> E[40]
     C --> F[60]
     C --> G[80]
+
+    %% Define the global style
+    classDef allNodes fill:#ffffff,stroke:#000000,stroke-width:2px;
+
+    %% Apply the style to all nodes
+    class * allNodes;    
 </div>
 
 ## With styling
