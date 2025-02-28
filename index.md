@@ -6,7 +6,6 @@
 ## FSM 1: No Branching
 
 <div class="mermaid">
-```mermaid
 stateDiagram
     direction LR
     classDef accepting font-weight:bold, stroke-width:3px
@@ -14,7 +13,6 @@ stateDiagram
     S0 --> S1 : a
 
     class S1 accepting
-```
 </div>
 
 This is the first finite state machine showing a transition from start to state S0, then to S1 on input 'a', and finally ending.
