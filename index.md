@@ -51,12 +51,9 @@ flowchart TD
 
     %% Flow
     Start --> Input --> InitR --> Decision
-    Decision -->|yes| CalcR --> UpdateN --> Decision
+    Decision -->|yes| CalcR --> UpdateN --> 
     Decision -->|no| Output --> Stop
-
-    %% Labeling the branches
-    Decision -->|no| Output
-    Decision -->|yes| CalcR
+    
 </div>
 
 ## With styling
