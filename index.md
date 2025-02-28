@@ -36,6 +36,29 @@ graph TD
     class * allNodes;    
 </div>
 
+## Flowchart
+
+<div class="mermaid">
+flowchart TD
+    Start([START]) 
+    Input[/Input int n/]
+    InitR[ r = 0 ]
+    Decision{ n > 0 ? }
+    CalcR[ r = (r * 10) + (n mod 10) ]
+    UpdateN[ n = n / 10 ]
+    Output[/ output r /]
+    Stop([STOP])
+
+    %% Flow
+    Start --> Input --> InitR --> Decision
+    Decision -->|yes| CalcR --> UpdateN --> Decision
+    Decision -->|no| Output --> Stop
+
+    %% Labeling the branches
+    Decision -->|no| Output
+    Decision -->|yes| CalcR
+</div>
+
 ## With styling
 
 <div class="mermaid">
