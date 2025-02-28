@@ -2,9 +2,12 @@
 
 ```mermaid
 stateDiagram
-    [*] --> S0
+    direction LR
+    classDef accepting font-weight:bold, stroke-width:3px
+
     S0 --> S1 : a
-    S1 --> [*]
+
+    class S1 accepting
 ```
 
 This is the first finite state machine showing a transition from start to state S0, then to S1 on input 'a', and finally ending.
@@ -13,6 +16,8 @@ This is the first finite state machine showing a transition from start to state 
 
 ```mermaid
 stateDiagram
+    direction LR
+
     [*] --> S0
     S0 --> S1 : x
     S0 --> S2 : y
@@ -20,4 +25,28 @@ stateDiagram
     S2 --> [*]
 ```
 
-This is the final text.
+## With styling
+
+```mermaid
+   stateDiagram
+   direction TB
+
+   accTitle: This is the accessible title
+   accDescr: This is an accessible description
+
+   classDef notMoving fill:white
+   classDef movement font-style:italic
+   classDef badBadEvent fill:#f00,color:white,font-weight:bold,stroke-width:2px,stroke:yellow
+
+   [*]--> Still
+   Still --> [*]
+   Still --> Moving
+   Moving --> Still
+   Moving --> Crash
+   Crash --> [*]
+
+   class Still notMoving
+   class Moving, Crash movement
+   class Crash badBadEvent
+   class end badBadEvent
+```
