@@ -1,7 +1,7 @@
-```mermaid
-    info
-```
-
+<script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true });
+</script>
 
 ## FSM 1: No Branching
 
@@ -82,7 +82,17 @@ flowchart TD
    class end badBadEvent
 </div>
 
-<script type="module">
-    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
-    mermaid.initialize({ startOnLoad: true });
-</script>
+
+```
+import math
+
+def thisiscode(param1):
+    return math.log(param1, 2)
+
+```
+
+
+
+
+
+
