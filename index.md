@@ -19,7 +19,7 @@ This is the first finite state machine showing a transition from start to state 
 
 ## FSM 2: Branching States
 
-```mermaid
+<div class="mermaid">
 stateDiagram
     direction LR
 
@@ -28,11 +28,11 @@ stateDiagram
     S0 --> S2 : y
     S1 --> [*]
     S2 --> [*]
-```
+</div>
 
 ## With styling
 
-```mermaid
+<div class="mermaid">
    stateDiagram
    direction TB
 
@@ -54,7 +54,7 @@ stateDiagram
    class Moving, Crash movement
    class Crash badBadEvent
    class end badBadEvent
-```
+</div>
 
 <script type="module">
     import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
