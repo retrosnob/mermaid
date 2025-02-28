@@ -43,8 +43,8 @@ flowchart TD
     Start([START]) 
     Input[/Input int n/]
     InitR[ r = 0 ]
-    Decision{ n > 0 ? }
-    CalcR[ r = (r * 10) + (n mod 10) ]
+    Decision{ n > 0 }
+    CalcR["r = (r * 10) + (n mod 10)"]
     UpdateN[ n = n / 10 ]
     Output[/ output r /]
     Stop([STOP])
